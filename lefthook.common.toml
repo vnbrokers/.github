@@ -46,5 +46,5 @@ glob = ["*.sh"]
 run = "shellcheck {staged_files}"
 
 [pre-commit.commands.zizmor]
-glob = [".github/workflows/*.yaml", ".github/actions/**/action.yaml"]
+glob = [".github/workflows/*.{yml,yaml}", ".github/actions/**/action.{yml,yaml}"]
 run = "zizmor --offline {staged_files}"
